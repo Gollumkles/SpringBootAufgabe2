@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Hi</title>
-    <link href="" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
     <h1>Studenten einfügen</h1>
+
+    <hr class="border-2 border-top border-info">
+    <a th:href="@{/web/v1/studenten}" class="btn btn-info" role="button">Student:innenliste</a>
+    <hr class="border-2 border-top border-info">
+
+
 </div>
     <form th:object="${student}" th:action="@{/web/v1/studenten/insert}" method="post">
         <div class="mb-3">
